@@ -28,8 +28,16 @@ def print_word_freq(file):
             d[word] = 1
         else:
             d[word] += 1 
-    print(d)
-                
+    # print(sorted(d, key=d.get, reverse=True)
+    # sorted(d, key=d.get, reverse=true)
+    # print(d)
+
+    # for word in sorted(d):
+    #     print((word, d[word]), end = " ")
+
+    d_filtered = sorted(d, key=d.get, reverse=True)
+    for x in d_filtered:
+       print(x, d[x])
 
 
         
